@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class frmCarreras
+    partial class FrmCarreras
     {
         /// <summary>
         /// Required designer variable.
@@ -96,7 +96,6 @@
             this.Controls.Add(this.LblCarreras);
             this.Name = "frmCarreras";
             this.Text = "frmCarreras";
-            this.Load += new System.EventHandler(this.frmCarreras_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

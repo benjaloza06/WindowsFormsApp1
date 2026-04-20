@@ -10,19 +10,55 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class frmCarreras : Form
+    public partial class FrmCarreras : Form
     {
-        public frmCarreras()
+        public FrmCarreras()
         {
             InitializeComponent();
         }
 
         private void BtnGrabar_Click(object sender, EventArgs e)
         {
+            ClsArchivo x = new ClsArchivo
+            {
+                NombreArc = ("Carreras.csv")
+            };
+            x.Grabar(TxtCarreras.Text);
+            x.Recorrer(LstCarreras);
 
+            TxtCarreras.Text = "";
         }
 
-        private void frmCarreras_Load(object sender, EventArgs e)
+        private void BtnLimpiar_Click(object sender, EventArgs e)
+        {
+            ClsArchivo x = new ClsArchivo
+            {
+                NombreArc = ("Carreras.csv")
+            };
+            x.LimpiarTodo();
+            x.Recorrer(LstCarreras);
+
+            TxtCarreras.Text = "";
+        }
+
+        private void TxtCarreras_TextChanged(object sender, EventArgs e)
+        {
+            if (TxtCarreras.Text == "")
+            {
+                BtnGrabar.Enabled = false;
+            }
+            else
+            {
+                BtnGrabar.Enabled = true;
+            }
+        }
+
+        private void FrmCarreras_Load(object sender, EventArgs e)
+        {
+            BtnGrabar.Enabled = false;
+        }
+
+        private void LstCarreras_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

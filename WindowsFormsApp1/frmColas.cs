@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class frmCola : Form
+    public partial class frmColas : Form
     {
-        public frmCola()
+        public frmColas()
         {
             InitializeComponent();
         }

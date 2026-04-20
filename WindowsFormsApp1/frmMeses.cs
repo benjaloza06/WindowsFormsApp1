@@ -10,16 +10,53 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class frmMeses : Form
+    public partial class FrmMeses : Form
     {
-        public frmMeses()
+        public FrmMeses()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void BtnGrabar_Click(object sender, EventArgs e)
         {
+            ClsArchivo x = new ClsArchivo
+            {
+                NombreArc = ("Meses.csv")
+            };
+            x.Grabar(TxtMeses.Text);
+            x.Recorrer(LstMeses);
 
+            TxtMeses.Text = "";
+        }
+
+        private void FrmMeses_Load(object sender, EventArgs e)
+        {
+            BtnGrabar.Enabled = false;
+        }
+
+        private void TxtMeses_TextChanged(object sender, EventArgs e)
+        {
+            if (TxtMeses.Text == "")
+            {
+                BtnGrabar.Enabled = false;
+            }
+            else
+            {
+                BtnGrabar.Enabled = true;
+            }
+        }
+
+        private void BtnLimpiar_Click(object sender, EventArgs e)
+        {
+            ClsArchivo x = new ClsArchivo
+            {
+                NombreArc = ("Meses.csv")
+            };
+            x.LimpiarTodo();
+            x.Recorrer(LstMeses);
+
+            TxtMeses.Text = "";
         }
     }
 }
+
