@@ -162,7 +162,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAlumnos";
             this.Text = "frmAlumnos";
-            this.Load += new System.EventHandler(this.frmAlumnos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvAlumnos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

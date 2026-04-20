@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
         private string Tra;
         private ClsNodo Sig;
 
-        //Propiedades del nodo
+        
         public Int32 Codigo
         {
             get { return Cod; }

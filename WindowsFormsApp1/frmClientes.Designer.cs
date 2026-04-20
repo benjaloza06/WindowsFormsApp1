@@ -168,7 +168,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmClientes";
             this.Text = "frmClientes";
-            this.Load += new System.EventHandler(this.frmClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
