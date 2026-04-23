@@ -61,8 +61,14 @@ namespace WindowsFormsApp1
 
         private void ColaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void colaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
             frmColas ven = new frmColas();
             ven.ShowDialog();
+
         }
     }
 }

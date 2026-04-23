@@ -5,6 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -18,7 +19,7 @@ namespace WindowsFormsApp1
         public ClsNodo Primero
         {
             get { return Pri; }
-            set { Primero = value; }
+            set { Pri = value; }
         }
         public ClsNodo Ultimo
         {
@@ -68,7 +69,7 @@ namespace WindowsFormsApp1
 
         }
 
-        public void Recorrer(ListBox Lista) 
+        public void Recorrer(ListBox Lista)
         {
             ClsNodo aux = Primero;
             Lista.Items.Clear();
@@ -76,8 +77,39 @@ namespace WindowsFormsApp1
             {
                 Lista.Items.Add(aux.Codigo);
                 aux = aux.Siguiente;
-            }    
+            }
         }
+
+        public void Recorrer(ComboBox Combo)
+        {
+            ClsNodo aux = Primero;
+            Combo.Items.Clear();
+            while (aux != null)
+            {
+                Combo.Items.Add(aux.Nombre);
+                aux = aux.Siguiente;
+            }
+        }  
+
+        public void Recorrer(String NombreArchivo)
+        {
+            ClsNodo aux = Primero;
+            StreamWriter AD = new StreamWriter(NombreArchivo, false, Encoding.UTF8);
+            AD.WriteLine("Lista de espera\n");
+            AD.WriteLine("Codigo;Nombre;Tramite");
+            while (aux != null)
+            {
+                AD.WriteLine(aux.Codigo);
+                AD.Write(";");
+                AD.Write(aux.Nombre);
+                AD.Write(";");
+                AD.WriteLine(aux.Tramite);
+                aux = aux.Siguiente;
+            }
+            AD.Close();
+        }
+
+
     }
 }
 
