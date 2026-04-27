@@ -70,6 +70,59 @@ namespace WindowsFormsApp1
             ven.ShowDialog();
 
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila ven = new frmPila();
+            ven.ShowDialog();
+        }
+
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaSimple ven = new frmListaSimple();
+            ven.ShowDialog();
+        }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaDoble ven = new frmListaDoble();
+            ven.ShowDialog();   
+        }
+
+        private void datosDelDesarrolladorToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmDatosDesarrollador ven = new frmDatosDesarrollador();
+            ven.ShowDialog();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void coloresToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmColores ven = new frmColores();
+            ven.ShowDialog();
+        }
+
+        private void mesesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmMeses ven = new FrmMeses();
+            ven.ShowDialog();
+        }
+
+        private void clientesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmClientes ven = new frmClientes();
+            ven.ShowDialog();
+        }
+
+        private void alumnosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmAlumnos ven = new FrmAlumnos();
+            ven.ShowDialog();
+        }
     }
 }
 

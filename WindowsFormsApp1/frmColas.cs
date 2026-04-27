@@ -56,6 +56,11 @@ namespace WindowsFormsApp1
 
             }
         }
+
+        private void frmColas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

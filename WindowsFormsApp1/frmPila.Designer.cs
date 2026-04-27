@@ -41,12 +41,12 @@
             this.LblNom = new System.Windows.Forms.Label();
             this.LblTram = new System.Windows.Forms.Label();
             this.DgvPila = new System.Windows.Forms.DataGridView();
-            this.BtnAgregar = new System.Windows.Forms.Button();
-            this.BtnEliminar = new System.Windows.Forms.Button();
-            this.LstPila = new System.Windows.Forms.ListBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnAgregar = new System.Windows.Forms.Button();
+            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.LstPila = new System.Windows.Forms.ListBox();
             this.GpbNuevo = new System.Windows.Forms.GroupBox();
             this.GpbEliminado = new System.Windows.Forms.GroupBox();
             this.GpbListadoGrilla = new System.Windows.Forms.GroupBox();
@@ -173,36 +173,7 @@
             this.DgvPila.Name = "DgvPila";
             this.DgvPila.Size = new System.Drawing.Size(393, 199);
             this.DgvPila.TabIndex = 12;
-            // 
-            // BtnAgregar
-            // 
-            this.BtnAgregar.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregar.Location = new System.Drawing.Point(287, 162);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(162, 31);
-            this.BtnAgregar.TabIndex = 13;
-            this.BtnAgregar.Text = "Agregar";
-            this.BtnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // BtnEliminar
-            // 
-            this.BtnEliminar.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminar.Location = new System.Drawing.Point(523, 162);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(173, 31);
-            this.BtnEliminar.TabIndex = 14;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // LstPila
-            // 
-            this.LstPila.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LstPila.FormattingEnabled = true;
-            this.LstPila.ItemHeight = 15;
-            this.LstPila.Location = new System.Drawing.Point(38, 20);
-            this.LstPila.Name = "LstPila";
-            this.LstPila.Size = new System.Drawing.Size(196, 199);
-            this.LstPila.TabIndex = 15;
+            this.DgvPila.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPila_CellContentClick);
             // 
             // Column1
             // 
@@ -219,6 +190,38 @@
             // 
             this.Column3.HeaderText = "Tramite";
             this.Column3.Name = "Column3";
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregar.Location = new System.Drawing.Point(287, 162);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(162, 31);
+            this.BtnAgregar.TabIndex = 13;
+            this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminar.Location = new System.Drawing.Point(523, 162);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(173, 31);
+            this.BtnEliminar.TabIndex = 14;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
+            // LstPila
+            // 
+            this.LstPila.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstPila.FormattingEnabled = true;
+            this.LstPila.ItemHeight = 15;
+            this.LstPila.Location = new System.Drawing.Point(38, 20);
+            this.LstPila.Name = "LstPila";
+            this.LstPila.Size = new System.Drawing.Size(196, 199);
+            this.LstPila.TabIndex = 15;
             // 
             // GpbNuevo
             // 
@@ -287,6 +290,7 @@
             this.Controls.Add(this.GpbListadoGrilla);
             this.Name = "frmPila";
             this.Text = "frmPila";
+            this.Load += new System.EventHandler(this.frmPila_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvPila)).EndInit();
             this.GpbListadoGrilla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

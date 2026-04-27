@@ -17,9 +17,59 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        ClsPila objPila = new ClsPila();
+
         private void LblCodigoo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmPila_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DgvPila_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            ClsNodo x = new ClsNodo();
+            x.Codigo = Convert.ToInt32(TxtCodigo.Text);
+            x.Nombre = TxtNombre.Text;
+            x.Tramite = TxtTramite.Text;
+
+            objPila.Agregar(x);
+            objPila.Recorrer(DgvPila);
+            objPila.Recorrer(LstPila);
+            objPila.Recorrer("Pila.csv");
+
+            TxtCodigo.Text = "";
+            TxtNombre.Text = "";
+            TxtTramite.Text = "";
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            if (objPila.Primero != null)
+            {
+                LblCo.Text = objPila.Primero.Codigo.ToString();
+                LblNom.Text = objPila.Primero.Nombre;
+                LblTram.Text = objPila.Primero.Tramite;
+
+                objPila.Eliminar();
+                objPila.Recorrer(DgvPila);
+                objPila.Recorrer(LstPila);
+                objPila.Recorrer("Pila.csv");
+            }
+            else
+            {
+                LblCodigo.Text = "";
+                LblNombre.Text = "";
+                LblTramite.Text = "";
+            }
         }
     }
 }
