@@ -19,10 +19,8 @@ namespace WindowsFormsApp1
 
         private void BtnGrabar_Click(object sender, EventArgs e)
         {
-            ClsArchivo x = new ClsArchivo
-            {
-                NombreArc = ("Colores.csv")
-            };
+            ClsArchivo x = new ClsArchivo();
+            x.NombreArc = ("Colores.csv");
             x.Grabar(TxtColores.Text);
             x.Recorrer(LstColores);
 
@@ -57,5 +55,16 @@ namespace WindowsFormsApp1
 
             TxtColores.Text = "";
         }
+
+        private void BtnGrabar_Click_1(object sender, EventArgs e)
+        {
+            ClsArchivo x = new ClsArchivo();
+            x.NombreArc = ("Colores.csv");
+            x.Grabar(TxtColores.Text);
+            x.Recorrer(LstColores);
+            TxtColores.Text = "";
+        }
     }
-}
+    }
+
+

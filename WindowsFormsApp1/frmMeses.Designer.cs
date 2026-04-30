@@ -39,29 +39,25 @@
             // 
             this.LblMeses.AutoSize = true;
             this.LblMeses.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMeses.Location = new System.Drawing.Point(31, 44);
-            this.LblMeses.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblMeses.Location = new System.Drawing.Point(23, 36);
             this.LblMeses.Name = "LblMeses";
-            this.LblMeses.Size = new System.Drawing.Size(57, 20);
+            this.LblMeses.Size = new System.Drawing.Size(45, 15);
             this.LblMeses.TabIndex = 0;
             this.LblMeses.Text = "Meses:";
             // 
             // TxtMeses
             // 
-            this.TxtMeses.Location = new System.Drawing.Point(179, 38);
-            this.TxtMeses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtMeses.Location = new System.Drawing.Point(134, 31);
             this.TxtMeses.Name = "TxtMeses";
-            this.TxtMeses.Size = new System.Drawing.Size(139, 22);
+            this.TxtMeses.Size = new System.Drawing.Size(105, 20);
             this.TxtMeses.TabIndex = 1;
-
             // 
             // BtnListar
             // 
             this.BtnListar.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnListar.Location = new System.Drawing.Point(35, 105);
-            this.BtnListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnListar.Location = new System.Drawing.Point(26, 85);
             this.BtnListar.Name = "BtnListar";
-            this.BtnListar.Size = new System.Drawing.Size(137, 28);
+            this.BtnListar.Size = new System.Drawing.Size(103, 23);
             this.BtnListar.TabIndex = 2;
             this.BtnListar.Text = "Listar";
             this.BtnListar.UseVisualStyleBackColor = true;
@@ -69,37 +65,35 @@
             // BtnGrabar
             // 
             this.BtnGrabar.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGrabar.Location = new System.Drawing.Point(180, 105);
-            this.BtnGrabar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnGrabar.Location = new System.Drawing.Point(135, 85);
             this.BtnGrabar.Name = "BtnGrabar";
-            this.BtnGrabar.Size = new System.Drawing.Size(139, 28);
+            this.BtnGrabar.Size = new System.Drawing.Size(104, 23);
             this.BtnGrabar.TabIndex = 3;
             this.BtnGrabar.Text = "Grabar";
             this.BtnGrabar.UseVisualStyleBackColor = true;
+            this.BtnGrabar.Click += new System.EventHandler(this.BtnGrabar_Click_1);
             // 
             // LstMeses
             // 
             this.LstMeses.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LstMeses.FormattingEnabled = true;
-            this.LstMeses.ItemHeight = 19;
-            this.LstMeses.Location = new System.Drawing.Point(35, 160);
-            this.LstMeses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LstMeses.ItemHeight = 15;
+            this.LstMeses.Location = new System.Drawing.Point(26, 130);
             this.LstMeses.Name = "LstMeses";
-            this.LstMeses.Size = new System.Drawing.Size(283, 156);
+            this.LstMeses.Size = new System.Drawing.Size(213, 124);
             this.LstMeses.TabIndex = 4;
             // 
-            // frmMeses
+            // FrmMeses
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(343, 351);
+            this.ClientSize = new System.Drawing.Size(257, 285);
             this.Controls.Add(this.LstMeses);
             this.Controls.Add(this.BtnGrabar);
             this.Controls.Add(this.BtnListar);
             this.Controls.Add(this.TxtMeses);
             this.Controls.Add(this.LblMeses);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmMeses";
             this.Text = "FrmMeses";
             this.Load += new System.EventHandler(this.FrmMeses_Load);

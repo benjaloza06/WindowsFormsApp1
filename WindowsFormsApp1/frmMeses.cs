@@ -57,6 +57,11 @@ namespace WindowsFormsApp1
 
             TxtMeses.Text = "";
         }
+
+        private void BtnGrabar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

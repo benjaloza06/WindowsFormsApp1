@@ -71,5 +71,10 @@ namespace WindowsFormsApp1
                 LblTramite.Text = "";
             }
         }
+
+        private void TxtCodigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
