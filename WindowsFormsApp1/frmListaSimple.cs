@@ -75,5 +75,10 @@ namespace WindowsFormsApp1
         {
             ValidarDatos();
         }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

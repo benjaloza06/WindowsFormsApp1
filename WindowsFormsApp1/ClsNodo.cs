@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
         private string Nom;
         private string Tra;
         private ClsNodo Sig;
+        private ClsNodo Ant;
 
         
         public Int32 Codigo
@@ -38,9 +39,13 @@ namespace WindowsFormsApp1
             get { return Sig; }
             set { Sig = value; }
         }
+
+        public ClsNodo Anterior
+        {
+            get { return Ant; } 
+            set { Ant = value; }
+        }
     }
-
-
 
 
 

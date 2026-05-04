@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="ClsArchivo.cs" />
     <Compile Include="ClsCola.cs" />
+    <Compile Include="ClsListaDoble.cs" />
     <Compile Include="ClsListaSimple.cs" />
     <Compile Include="ClsNodo.cs" />
     <Compile Include="ClsPila.cs" />
