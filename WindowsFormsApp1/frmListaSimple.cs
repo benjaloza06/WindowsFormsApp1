@@ -48,11 +48,11 @@ namespace WindowsFormsApp1
         {
             if (TxtCodigo.Text != "" && TxtNombre.Text != "" && TxtTramite.Text != "")
             {
-                BtnAgregar.Enabled = false;
+                BtnAgregar.Enabled = true;
             }
             else
             {
-                BtnAgregar.Enabled = true;
+                BtnAgregar.Enabled = false;
             }
         }
 
