@@ -17,24 +17,23 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void BtnGrabar_Click(object sender, EventArgs e)
-        {
-            ClsArchivo x = new ClsArchivo
-            {
-                NombreArc = ("Meses.csv")
-            };
-            x.Grabar(TxtMeses.Text);
-            x.Recorrer(LstMeses);
-
-            TxtMeses.Text = "";
-        }
 
         private void FrmMeses_Load(object sender, EventArgs e)
         {
             BtnGrabar.Enabled = false;
         }
 
-        private void TxtMeses_TextChanged(object sender, EventArgs e)
+        private void BtnGrabar_Click_1(object sender, EventArgs e)
+        {
+            ClsArchivo x = new ClsArchivo();
+            x.NombreArc = ("Meses.csv");
+            x.Grabar(TxtMeses.Text);
+            x.Recorrer(LstMeses);
+
+            TxtMeses.Text = "";
+        }
+
+        private void TxtMeses_TextChanged_1(object sender, EventArgs e)
         {
             if (TxtMeses.Text == "")
             {
@@ -48,20 +47,14 @@ namespace WindowsFormsApp1
 
         private void BtnLimpiar_Click(object sender, EventArgs e)
         {
-            ClsArchivo x = new ClsArchivo
-            {
-                NombreArc = ("Meses.csv")
-            };
+            ClsArchivo x = new ClsArchivo();
+            x.NombreArc = ("Meses.csv");
             x.LimpiarTodo();
             x.Recorrer(LstMeses);
 
             TxtMeses.Text = "";
         }
-
-        private void BtnGrabar_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+
 

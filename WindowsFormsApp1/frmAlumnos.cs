@@ -18,7 +18,30 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void FrmAlumnos_Load(object sender, EventArgs e)
+        private void BtnGrabar_Click_1(object sender, EventArgs e)
+        {
+            ClsArchivo objRecorrer = new ClsArchivo
+            {
+                NombreArc = "Alumnos.csv"
+            };
+            objRecorrer.Grabar(TxtCodigo.Text, TxtNombre.Text, CmbCarrera.Text);
+            objRecorrer.Recorrer(DgvAlumnos);
+        }
+
+        private void BtnLimpiar_Click_1(object sender, EventArgs e)
+        {
+            ClsArchivo x = new ClsArchivo
+            {
+                NombreArc = ("Alumnos.csv")
+            };
+            x.LimpiarTodo();
+
+            TxtCodigo.Text = "";
+            TxtNombre.Text = "";
+            CmbCarrera.Text = "";
+        }
+
+        private void FrmAlumnos_Load_1(object sender, EventArgs e)
         {
             ClsArchivo objGrabar = new ClsArchivo
             {
@@ -32,7 +55,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void TxtCodigo_TextChanged(object sender, EventArgs e)
+        private void ValidarDatos()
         {
             if (TxtCodigo.Text != "" && TxtNombre.Text != "" && CmbCarrera.Text != "")
             {
@@ -44,27 +67,26 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void BtnGrabar_Click(object sender, EventArgs e)
+        private void TxtCodigo_TextChanged(object sender, EventArgs e)
         {
-            ClsArchivo objRecorrer = new ClsArchivo
-            {
-                NombreArc = "Alumnos.csv"
-            };
-            objRecorrer.Grabar(TxtCodigo.Text, TxtNombre.Text, CmbCarrera.Text);
-            objRecorrer.Recorrer(DgvAlumnos);
+            ValidarDatos();
         }
 
-        private void BtnLimpiar_Click(object sender, EventArgs e)
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
         {
-            ClsArchivo x = new ClsArchivo
-            {
-                NombreArc = ("Alumnos.csv")
-            };
-            x.LimpiarTodo();
+            ValidarDatos();
+        }
 
-            TxtCodigo.Text = "";
-            TxtNombre.Text = "";
-            CmbCarrera.Text = "";
+        private void CmbCarrera_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (CmbCarrera.SelectedIndex != -1)
+            {
+                BtnGrabar.Enabled = true;
+            }
+            else
+            {
+                BtnGrabar.Enabled = false;
+            }
         }
     }
 }

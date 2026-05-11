@@ -30,7 +30,7 @@
         {
             this.LblMeses = new System.Windows.Forms.Label();
             this.TxtMeses = new System.Windows.Forms.TextBox();
-            this.BtnListar = new System.Windows.Forms.Button();
+            this.BtnLimpiar = new System.Windows.Forms.Button();
             this.BtnGrabar = new System.Windows.Forms.Button();
             this.LstMeses = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
@@ -51,16 +51,18 @@
             this.TxtMeses.Name = "TxtMeses";
             this.TxtMeses.Size = new System.Drawing.Size(105, 20);
             this.TxtMeses.TabIndex = 1;
+            this.TxtMeses.TextChanged += new System.EventHandler(this.TxtMeses_TextChanged_1);
             // 
-            // BtnListar
+            // BtnLimpiar
             // 
-            this.BtnListar.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnListar.Location = new System.Drawing.Point(26, 85);
-            this.BtnListar.Name = "BtnListar";
-            this.BtnListar.Size = new System.Drawing.Size(103, 23);
-            this.BtnListar.TabIndex = 2;
-            this.BtnListar.Text = "Listar";
-            this.BtnListar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLimpiar.Location = new System.Drawing.Point(26, 85);
+            this.BtnLimpiar.Name = "BtnLimpiar";
+            this.BtnLimpiar.Size = new System.Drawing.Size(103, 23);
+            this.BtnLimpiar.TabIndex = 2;
+            this.BtnLimpiar.Text = "Limpiar";
+            this.BtnLimpiar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
             // 
             // BtnGrabar
             // 
@@ -91,11 +93,11 @@
             this.ClientSize = new System.Drawing.Size(257, 285);
             this.Controls.Add(this.LstMeses);
             this.Controls.Add(this.BtnGrabar);
-            this.Controls.Add(this.BtnListar);
+            this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.TxtMeses);
             this.Controls.Add(this.LblMeses);
             this.Name = "FrmMeses";
-            this.Text = "FrmMeses";
+            this.Text = "Meses";
             this.Load += new System.EventHandler(this.FrmMeses_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -106,7 +108,7 @@
 
         private System.Windows.Forms.Label LblMeses;
         private System.Windows.Forms.TextBox TxtMeses;
-        private System.Windows.Forms.Button BtnListar;
+        private System.Windows.Forms.Button BtnLimpiar;
         private System.Windows.Forms.Button BtnGrabar;
         private System.Windows.Forms.ListBox LstMeses;
     }

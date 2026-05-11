@@ -123,6 +123,12 @@ namespace WindowsFormsApp1
             FrmAlumnos ven = new FrmAlumnos();
             ven.ShowDialog();
         }
+
+        private void carrerasToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmCarreras ven = new FrmCarreras();
+            ven.ShowDialog();
+        }
     }
 }
 

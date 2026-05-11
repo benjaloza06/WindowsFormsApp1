@@ -30,7 +30,7 @@
         {
             this.LblColores = new System.Windows.Forms.Label();
             this.TxtColores = new System.Windows.Forms.TextBox();
-            this.BtnListar = new System.Windows.Forms.Button();
+            this.BtnLimpiar = new System.Windows.Forms.Button();
             this.BtnGrabar = new System.Windows.Forms.Button();
             this.LstColores = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
@@ -50,15 +50,17 @@
             this.TxtColores.Name = "TxtColores";
             this.TxtColores.Size = new System.Drawing.Size(100, 20);
             this.TxtColores.TabIndex = 1;
+            this.TxtColores.TextChanged += new System.EventHandler(this.TxtColores_TextChanged_1);
             // 
-            // BtnListar
+            // BtnLimpiar
             // 
-            this.BtnListar.Location = new System.Drawing.Point(26, 59);
-            this.BtnListar.Name = "BtnListar";
-            this.BtnListar.Size = new System.Drawing.Size(75, 23);
-            this.BtnListar.TabIndex = 2;
-            this.BtnListar.Text = "Listar";
-            this.BtnListar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Location = new System.Drawing.Point(26, 59);
+            this.BtnLimpiar.Name = "BtnLimpiar";
+            this.BtnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.BtnLimpiar.TabIndex = 2;
+            this.BtnLimpiar.Text = "Limpiar";
+            this.BtnLimpiar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click_1);
             // 
             // BtnGrabar
             // 
@@ -86,7 +88,7 @@
             this.ClientSize = new System.Drawing.Size(228, 269);
             this.Controls.Add(this.LstColores);
             this.Controls.Add(this.BtnGrabar);
-            this.Controls.Add(this.BtnListar);
+            this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.TxtColores);
             this.Controls.Add(this.LblColores);
             this.Name = "frmColores";
@@ -101,7 +103,7 @@
 
         private System.Windows.Forms.Label LblColores;
         private System.Windows.Forms.TextBox TxtColores;
-        private System.Windows.Forms.Button BtnListar;
+        private System.Windows.Forms.Button BtnLimpiar;
         private System.Windows.Forms.Button BtnGrabar;
         private System.Windows.Forms.ListBox LstColores;
     }

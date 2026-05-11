@@ -17,39 +17,15 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void BtnGrabar_Click(object sender, EventArgs e)
-        {
-            ClsArchivo x = new ClsArchivo();
-            x.NombreArc = ("Colores.csv");
-            x.Grabar(TxtColores.Text);
-            x.Recorrer(LstColores);
-
-            TxtColores.Text = "";
-        }
-
-        private void TxtColores_TextChanged(object sender, EventArgs e)
-        {
-            if (TxtColores.Text == "")
-            {
-                BtnGrabar.Enabled = false;
-            }
-            else
-            {
-                BtnGrabar.Enabled = true;
-            }
-        }
-
         private void FrmColores_Load(object sender, EventArgs e)
         {
             BtnGrabar.Enabled = false;
         }
 
-        private void BtnLimpiar_Click(object sender, EventArgs e)
+        private void BtnLimpiar_Click_1(object sender, EventArgs e)
         {
-            ClsArchivo x = new ClsArchivo
-            {
-                NombreArc = ("Careras.csv")
-            };
+            ClsArchivo x = new ClsArchivo();
+            x.NombreArc = ("Careras.csv");
             x.LimpiarTodo();
             x.Recorrer(LstColores);
 
@@ -62,9 +38,22 @@ namespace WindowsFormsApp1
             x.NombreArc = ("Colores.csv");
             x.Grabar(TxtColores.Text);
             x.Recorrer(LstColores);
+
             TxtColores.Text = "";
         }
+
+        private void TxtColores_TextChanged_1(object sender, EventArgs e)
+        {
+            if (TxtColores.Text == "")
+            {
+                BtnGrabar.Enabled = false;
+            }
+            else
+            {
+                BtnGrabar.Enabled = true;
+            }
+        }
     }
-    }
+}
 
 
