@@ -22,9 +22,7 @@ namespace WindowsFormsApp1
 
         private void frmListaSimple_Load(object sender, EventArgs e)
         {
-            ClsArchivo x = new ClsArchivo();
-            x.NombreArc = "ListaSimple.csv";
-            if (File.Exists(x.NombreArc)) x.Recorrer(DgvSimple);
+            BtnEliminar.Enabled = false;
             BtnAgregar.Enabled = false;
         }
         private void BtnAgregar_Click(object sender, EventArgs e)
@@ -36,6 +34,7 @@ namespace WindowsFormsApp1
 
             objPila.Agregar(x);
             objPila.Recorrer(DgvSimple);
+            objPila.Recorrer("ListaSimple.csv");
             objPila.Recorrer(CmbCodigo);
             objPila.Recorrer(LstLista);
 
@@ -71,11 +70,6 @@ namespace WindowsFormsApp1
             ValidarDatos();
         }
 
-        private void CmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ValidarDatos();
-        }
-
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
 
@@ -99,5 +93,28 @@ namespace WindowsFormsApp1
                 BtnEliminar.Enabled = false;
             }
         }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+             // Solo permite números (char.IsDigit) y la tecla de borrar (char.IsControl)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea cualquier otro caracter
+            }
+        }
+
+        private void CmbCodigo_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (CmbCodigo.Text != "")
+            {
+                BtnEliminar.Enabled = true;
+            }
+            else
+            {
+                BtnEliminar.Enabled = false;
+            }
+        }
     }
+    
 }
+

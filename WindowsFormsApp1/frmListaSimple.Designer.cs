@@ -176,13 +176,14 @@
             // 
             // CmbCodigo
             // 
+            this.CmbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbCodigo.FormattingEnabled = true;
             this.CmbCodigo.Location = new System.Drawing.Point(79, 81);
             this.CmbCodigo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CmbCodigo.Name = "CmbCodigo";
             this.CmbCodigo.Size = new System.Drawing.Size(137, 28);
             this.CmbCodigo.TabIndex = 27;
-            this.CmbCodigo.SelectedIndexChanged += new System.EventHandler(this.CmbCodigo_SelectedIndexChanged);
+            this.CmbCodigo.SelectedIndexChanged += new System.EventHandler(this.CmbCodigo_SelectedIndexChanged_1);
             // 
             // GpbListadoGrilla
             // 

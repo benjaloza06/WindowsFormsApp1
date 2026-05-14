@@ -44,7 +44,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.IMG_5449;
-            this.pictureBox1.Location = new System.Drawing.Point(210, 74);
+            this.pictureBox1.Location = new System.Drawing.Point(113, 62);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(344, 404);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -135,7 +135,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(228, 26);
+            this.label1.Location = new System.Drawing.Point(128, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(326, 33);
             this.label1.TabIndex = 9;
@@ -146,7 +146,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(800, 748);
+            this.ClientSize = new System.Drawing.Size(559, 698);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LblED);
             this.Controls.Add(this.LblMateria);
