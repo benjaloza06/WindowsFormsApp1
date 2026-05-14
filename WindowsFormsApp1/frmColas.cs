@@ -92,10 +92,10 @@ namespace WindowsFormsApp1
 
         private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Solo permite números (char.IsDigit) y la tecla de borrar (char.IsControl)
+            
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
-                e.Handled = true; // Bloquea cualquier otro caracter
+                e.Handled = true; 
             }
         }
     }

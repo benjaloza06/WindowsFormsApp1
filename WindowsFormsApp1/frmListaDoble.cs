@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
         }
 
 
-        ClsListaDoble objDoble = new ClsListaDoble();
+        ClsListaDoble objDoble = new ClsListaDoble(); //GLOBAL
 
         private void frmListaDoble_Load(object sender, EventArgs e)
         {

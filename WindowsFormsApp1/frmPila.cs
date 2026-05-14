@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        ClsPila objPila = new ClsPila();
+        ClsPila objPila = new ClsPila(); //GLOBAL
 
         private void frmPila_Load(object sender, EventArgs e)
         {
@@ -76,10 +76,10 @@ namespace WindowsFormsApp1
        
         private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Solo permite números (char.IsDigit) y la tecla de borrar (char.IsControl)
+        
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
-                e.Handled = true; // Bloquea cualquier otro caracter
+                e.Handled = true; 
             }
         }
 
