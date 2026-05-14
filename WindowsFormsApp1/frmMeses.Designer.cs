@@ -39,26 +39,29 @@
             // 
             this.LblMeses.AutoSize = true;
             this.LblMeses.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMeses.Location = new System.Drawing.Point(23, 36);
+            this.LblMeses.Location = new System.Drawing.Point(31, 44);
+            this.LblMeses.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMeses.Name = "LblMeses";
-            this.LblMeses.Size = new System.Drawing.Size(45, 15);
+            this.LblMeses.Size = new System.Drawing.Size(57, 20);
             this.LblMeses.TabIndex = 0;
             this.LblMeses.Text = "Meses:";
             // 
             // TxtMeses
             // 
-            this.TxtMeses.Location = new System.Drawing.Point(134, 31);
+            this.TxtMeses.Location = new System.Drawing.Point(179, 38);
+            this.TxtMeses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtMeses.Name = "TxtMeses";
-            this.TxtMeses.Size = new System.Drawing.Size(105, 20);
+            this.TxtMeses.Size = new System.Drawing.Size(139, 22);
             this.TxtMeses.TabIndex = 1;
             this.TxtMeses.TextChanged += new System.EventHandler(this.TxtMeses_TextChanged_1);
             // 
             // BtnLimpiar
             // 
             this.BtnLimpiar.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLimpiar.Location = new System.Drawing.Point(26, 85);
+            this.BtnLimpiar.Location = new System.Drawing.Point(35, 105);
+            this.BtnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnLimpiar.Name = "BtnLimpiar";
-            this.BtnLimpiar.Size = new System.Drawing.Size(103, 23);
+            this.BtnLimpiar.Size = new System.Drawing.Size(137, 28);
             this.BtnLimpiar.TabIndex = 2;
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@
             // BtnGrabar
             // 
             this.BtnGrabar.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGrabar.Location = new System.Drawing.Point(135, 85);
+            this.BtnGrabar.Location = new System.Drawing.Point(180, 105);
+            this.BtnGrabar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnGrabar.Name = "BtnGrabar";
-            this.BtnGrabar.Size = new System.Drawing.Size(104, 23);
+            this.BtnGrabar.Size = new System.Drawing.Size(139, 28);
             this.BtnGrabar.TabIndex = 3;
             this.BtnGrabar.Text = "Grabar";
             this.BtnGrabar.UseVisualStyleBackColor = true;
@@ -79,24 +83,27 @@
             // 
             this.LstMeses.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LstMeses.FormattingEnabled = true;
-            this.LstMeses.ItemHeight = 15;
-            this.LstMeses.Location = new System.Drawing.Point(26, 130);
+            this.LstMeses.ItemHeight = 19;
+            this.LstMeses.Location = new System.Drawing.Point(35, 160);
+            this.LstMeses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LstMeses.Name = "LstMeses";
-            this.LstMeses.Size = new System.Drawing.Size(213, 124);
+            this.LstMeses.Size = new System.Drawing.Size(283, 137);
             this.LstMeses.TabIndex = 4;
             // 
             // FrmMeses
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(257, 285);
+            this.ClientSize = new System.Drawing.Size(343, 351);
             this.Controls.Add(this.LstMeses);
             this.Controls.Add(this.BtnGrabar);
             this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.TxtMeses);
             this.Controls.Add(this.LblMeses);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmMeses";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Meses";
             this.Load += new System.EventHandler(this.FrmMeses_Load);
             this.ResumeLayout(false);

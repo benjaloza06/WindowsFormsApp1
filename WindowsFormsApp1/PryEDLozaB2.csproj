@@ -138,6 +138,9 @@
     <EmbeddedResource Include="frmColores.resx">
       <DependentUpon>frmColores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosDesarrollador.resx">
+      <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListaDoble.resx">
       <DependentUpon>frmListaDoble.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,6 +193,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_5449.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

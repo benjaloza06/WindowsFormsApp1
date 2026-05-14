@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
         {
             ClsArchivo x = new ClsArchivo();
             x.NombreArc = "ListaSimple.csv";
-            if (File.Exists(x.NombreArc)) x.Recorrer(DgvLista);
+            if (File.Exists(x.NombreArc)) x.Recorrer(DgvSimple);
             BtnAgregar.Enabled = false;
         }
         private void BtnAgregar_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
             x.Tramite = TxtTramite.Text;
 
             objPila.Agregar(x);
-            objPila.Recorrer(DgvLista);
+            objPila.Recorrer(DgvSimple);
             objPila.Recorrer(CmbCodigo);
             objPila.Recorrer(LstLista);
 
@@ -79,6 +79,25 @@ namespace WindowsFormsApp1
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
 
+            if (CmbCodigo.SelectedIndex != -1)
+            {
+                if (objPila.Primero != null)
+                {
+                    Int32 x = Convert.ToInt32(CmbCodigo.Text);
+                    objPila.Eliminar(x);
+                    objPila.Recorrer(DgvSimple);
+                    objPila.Recorrer("ListaSimple.csv");
+                    objPila.Recorrer(LstLista);
+                    objPila.Recorrer(CmbCodigo);
+
+                }
+                else
+                {
+                    MessageBox.Show("La lista esta vacia", "Lista sin datos",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                BtnEliminar.Enabled = false;
+            }
         }
     }
 }

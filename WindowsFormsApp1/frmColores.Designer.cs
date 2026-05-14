@@ -38,25 +38,28 @@
             // LblColores
             // 
             this.LblColores.AutoSize = true;
-            this.LblColores.Location = new System.Drawing.Point(23, 25);
+            this.LblColores.Location = new System.Drawing.Point(31, 31);
+            this.LblColores.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblColores.Name = "LblColores";
-            this.LblColores.Size = new System.Drawing.Size(45, 13);
+            this.LblColores.Size = new System.Drawing.Size(57, 16);
             this.LblColores.TabIndex = 0;
             this.LblColores.Text = "Colores:";
             // 
             // TxtColores
             // 
-            this.TxtColores.Location = new System.Drawing.Point(101, 18);
+            this.TxtColores.Location = new System.Drawing.Point(135, 22);
+            this.TxtColores.Margin = new System.Windows.Forms.Padding(4);
             this.TxtColores.Name = "TxtColores";
-            this.TxtColores.Size = new System.Drawing.Size(100, 20);
+            this.TxtColores.Size = new System.Drawing.Size(132, 22);
             this.TxtColores.TabIndex = 1;
             this.TxtColores.TextChanged += new System.EventHandler(this.TxtColores_TextChanged_1);
             // 
             // BtnLimpiar
             // 
-            this.BtnLimpiar.Location = new System.Drawing.Point(26, 59);
+            this.BtnLimpiar.Location = new System.Drawing.Point(35, 73);
+            this.BtnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLimpiar.Name = "BtnLimpiar";
-            this.BtnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.BtnLimpiar.Size = new System.Drawing.Size(100, 28);
             this.BtnLimpiar.TabIndex = 2;
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = true;
@@ -64,9 +67,10 @@
             // 
             // BtnGrabar
             // 
-            this.BtnGrabar.Location = new System.Drawing.Point(116, 59);
+            this.BtnGrabar.Location = new System.Drawing.Point(155, 73);
+            this.BtnGrabar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnGrabar.Name = "BtnGrabar";
-            this.BtnGrabar.Size = new System.Drawing.Size(85, 23);
+            this.BtnGrabar.Size = new System.Drawing.Size(113, 28);
             this.BtnGrabar.TabIndex = 3;
             this.BtnGrabar.Text = "Grabar";
             this.BtnGrabar.UseVisualStyleBackColor = true;
@@ -75,24 +79,28 @@
             // LstColores
             // 
             this.LstColores.FormattingEnabled = true;
-            this.LstColores.Location = new System.Drawing.Point(26, 113);
+            this.LstColores.ItemHeight = 16;
+            this.LstColores.Location = new System.Drawing.Point(35, 139);
+            this.LstColores.Margin = new System.Windows.Forms.Padding(4);
             this.LstColores.Name = "LstColores";
-            this.LstColores.Size = new System.Drawing.Size(175, 147);
+            this.LstColores.Size = new System.Drawing.Size(232, 180);
             this.LstColores.TabIndex = 4;
             // 
             // frmColores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(228, 269);
+            this.ClientSize = new System.Drawing.Size(304, 331);
             this.Controls.Add(this.LstColores);
             this.Controls.Add(this.BtnGrabar);
             this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.TxtColores);
             this.Controls.Add(this.LblColores);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmColores";
-            this.Text = "frmColores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Colores";
             this.Load += new System.EventHandler(this.FrmColores_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-   
+
         private void BtnGrabar_Click_1(object sender, EventArgs e)
         {
             ClsArchivo objRecorrer = new ClsArchivo();
@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
             ClsArchivo x = new ClsArchivo();
             x.NombreArc = ("Clientes.csv");
             x.LimpiarTodo();
-           
+
             TxtCodigo.Text = "";
             TxtNombre.Text = "";
             TxtDeuda.Text = "";
@@ -41,25 +41,24 @@ namespace WindowsFormsApp1
 
         private void frmClientes_Load_1(object sender, EventArgs e)
         {
-            ClsArchivo x = new ClsArchivo
-            {
-                NombreArc = "Clientes.csv"
-            };
+            ClsArchivo x = new ClsArchivo();
+            x.NombreArc = "Clientes.csv";
             if (File.Exists(x.NombreArc)) x.Recorrer(DgvClientes);
             BtnGrabar.Enabled = false;
+
         }
         private void ValidarDatos()
         {
             if (TxtCodigo.Text != "" && TxtNombre.Text != "" && TxtDeuda.Text != "")
             {
-                BtnGrabar.Enabled = false;
+                BtnGrabar.Enabled = true;
             }
             else
             {
-                BtnGrabar.Enabled = true;
+                BtnGrabar.Enabled = false;
             }
         }
-         private void TxtCodigo_TextChanged_1(object sender, EventArgs e)
+        private void TxtCodigo_TextChanged_1(object sender, EventArgs e)
         {
             ValidarDatos();
         }
@@ -73,6 +72,26 @@ namespace WindowsFormsApp1
         {
             ValidarDatos();
         }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Solo permite números (char.IsDigit) y la tecla de borrar (char.IsControl)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea cualquier otro caracter
+            }
+        }
+
+        private void txtDeuda_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Solo permite números (char.IsDigit) y la tecla de borrar (char.IsControl)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea cualquier otro caracter
+            }
+        }
     }
+
 }
 
+     

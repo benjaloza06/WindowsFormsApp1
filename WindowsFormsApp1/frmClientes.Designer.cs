@@ -36,10 +36,10 @@
             this.BtnGrabar = new System.Windows.Forms.Button();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.DgvClientes = new System.Windows.Forms.DataGridView();
+            this.BtnLimpiar = new System.Windows.Forms.Button();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,9 +47,10 @@
             // 
             this.LblCodigo.AutoSize = true;
             this.LblCodigo.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCodigo.Location = new System.Drawing.Point(31, 55);
+            this.LblCodigo.Location = new System.Drawing.Point(41, 68);
+            this.LblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblCodigo.Name = "LblCodigo";
-            this.LblCodigo.Size = new System.Drawing.Size(48, 15);
+            this.LblCodigo.Size = new System.Drawing.Size(63, 20);
             this.LblCodigo.TabIndex = 0;
             this.LblCodigo.Text = "Codigo:";
             // 
@@ -57,9 +58,10 @@
             // 
             this.LblNombre.AutoSize = true;
             this.LblNombre.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombre.Location = new System.Drawing.Point(31, 99);
+            this.LblNombre.Location = new System.Drawing.Point(41, 122);
+            this.LblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblNombre.Name = "LblNombre";
-            this.LblNombre.Size = new System.Drawing.Size(55, 15);
+            this.LblNombre.Size = new System.Drawing.Size(72, 20);
             this.LblNombre.TabIndex = 1;
             this.LblNombre.Text = "Nombre:";
             // 
@@ -67,34 +69,38 @@
             // 
             this.LblDeuda.AutoSize = true;
             this.LblDeuda.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDeuda.Location = new System.Drawing.Point(31, 141);
+            this.LblDeuda.Location = new System.Drawing.Point(41, 174);
+            this.LblDeuda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDeuda.Name = "LblDeuda";
-            this.LblDeuda.Size = new System.Drawing.Size(45, 15);
+            this.LblDeuda.Size = new System.Drawing.Size(58, 20);
             this.LblDeuda.TabIndex = 2;
             this.LblDeuda.Text = "Deuda:";
             // 
             // TxtCodigo
             // 
-            this.TxtCodigo.Location = new System.Drawing.Point(348, 50);
+            this.TxtCodigo.Location = new System.Drawing.Point(464, 62);
+            this.TxtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCodigo.Name = "TxtCodigo";
-            this.TxtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.TxtCodigo.Size = new System.Drawing.Size(132, 22);
             this.TxtCodigo.TabIndex = 3;
             this.TxtCodigo.TextChanged += new System.EventHandler(this.TxtCodigo_TextChanged_1);
             // 
             // TxtDeuda
             // 
-            this.TxtDeuda.Location = new System.Drawing.Point(348, 133);
+            this.TxtDeuda.Location = new System.Drawing.Point(464, 164);
+            this.TxtDeuda.Margin = new System.Windows.Forms.Padding(4);
             this.TxtDeuda.Name = "TxtDeuda";
-            this.TxtDeuda.Size = new System.Drawing.Size(100, 20);
+            this.TxtDeuda.Size = new System.Drawing.Size(132, 22);
             this.TxtDeuda.TabIndex = 5;
             this.TxtDeuda.TextChanged += new System.EventHandler(this.TxtDeuda_TextChanged);
             // 
             // BtnGrabar
             // 
             this.BtnGrabar.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGrabar.Location = new System.Drawing.Point(348, 195);
+            this.BtnGrabar.Location = new System.Drawing.Point(464, 240);
+            this.BtnGrabar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnGrabar.Name = "BtnGrabar";
-            this.BtnGrabar.Size = new System.Drawing.Size(100, 23);
+            this.BtnGrabar.Size = new System.Drawing.Size(133, 28);
             this.BtnGrabar.TabIndex = 6;
             this.BtnGrabar.Text = "Grabar";
             this.BtnGrabar.UseVisualStyleBackColor = true;
@@ -102,9 +108,10 @@
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(95, 99);
+            this.TxtNombre.Location = new System.Drawing.Point(127, 122);
+            this.TxtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(353, 20);
+            this.TxtNombre.Size = new System.Drawing.Size(469, 22);
             this.TxtNombre.TabIndex = 8;
             this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
@@ -115,12 +122,25 @@
             this.Codigo,
             this.Column1,
             this.Column2});
-            this.DgvClientes.Location = new System.Drawing.Point(33, 236);
+            this.DgvClientes.Location = new System.Drawing.Point(44, 290);
+            this.DgvClientes.Margin = new System.Windows.Forms.Padding(4);
             this.DgvClientes.Name = "DgvClientes";
             this.DgvClientes.RowHeadersVisible = false;
             this.DgvClientes.RowHeadersWidth = 51;
-            this.DgvClientes.Size = new System.Drawing.Size(414, 202);
+            this.DgvClientes.Size = new System.Drawing.Size(552, 249);
             this.DgvClientes.TabIndex = 9;
+            // 
+            // BtnLimpiar
+            // 
+            this.BtnLimpiar.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLimpiar.Location = new System.Drawing.Point(45, 240);
+            this.BtnLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnLimpiar.Name = "BtnLimpiar";
+            this.BtnLimpiar.Size = new System.Drawing.Size(108, 28);
+            this.BtnLimpiar.TabIndex = 10;
+            this.BtnLimpiar.Text = "Limpiar";
+            this.BtnLimpiar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click_1);
             // 
             // Codigo
             // 
@@ -142,30 +162,17 @@
             // 
             // Column2
             // 
-            this.Column2.Frozen = true;
-            this.Column2.HeaderText = "Carrera";
+            this.Column2.HeaderText = "Deuda";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
             this.Column2.Width = 125;
-            // 
-            // BtnLimpiar
-            // 
-            this.BtnLimpiar.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLimpiar.Location = new System.Drawing.Point(34, 195);
-            this.BtnLimpiar.Name = "BtnLimpiar";
-            this.BtnLimpiar.Size = new System.Drawing.Size(81, 23);
-            this.BtnLimpiar.TabIndex = 10;
-            this.BtnLimpiar.Text = "Limpiar";
-            this.BtnLimpiar.UseVisualStyleBackColor = true;
-            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click_1);
             // 
             // frmClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(459, 450);
+            this.BackColor = System.Drawing.Color.Thistle;
+            this.ClientSize = new System.Drawing.Size(612, 554);
             this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.DgvClientes);
             this.Controls.Add(this.TxtNombre);
@@ -175,7 +182,9 @@
             this.Controls.Add(this.LblDeuda);
             this.Controls.Add(this.LblNombre);
             this.Controls.Add(this.LblCodigo);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.frmClientes_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).EndInit();
@@ -194,9 +203,9 @@
         private System.Windows.Forms.Button BtnGrabar;
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.DataGridView DgvClientes;
+        private System.Windows.Forms.Button BtnLimpiar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.Button BtnLimpiar;
     }
 }

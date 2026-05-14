@@ -19,19 +19,10 @@ namespace WindowsFormsApp1
 
         ClsPila objPila = new ClsPila();
 
-        private void LblCodigoo_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmPila_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void DgvPila_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            BtnAgregar.Enabled = false;
+            
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
@@ -42,13 +33,24 @@ namespace WindowsFormsApp1
             x.Tramite = TxtTramite.Text;
 
             objPila.Agregar(x);
-            objPila.Recorrer(DgvPila);
+            objPila.Recorrer(DgvLista);
             objPila.Recorrer(LstPila);
             objPila.Recorrer("Pila.csv");
 
             TxtCodigo.Text = "";
             TxtNombre.Text = "";
             TxtTramite.Text = "";
+        }
+        private void ValidarDatos()
+        {
+            if (TxtCodigo.Text != "" && TxtNombre.Text != "" && TxtTramite.Text != "")
+            {
+                BtnAgregar.Enabled = true;
+            }
+            else
+            {
+                BtnAgregar.Enabled = false;
+            }
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
@@ -60,21 +62,42 @@ namespace WindowsFormsApp1
                 LblTram.Text = objPila.Primero.Tramite;
 
                 objPila.Eliminar();
-                objPila.Recorrer(DgvPila);
+                objPila.Recorrer(DgvLista);
                 objPila.Recorrer(LstPila);
                 objPila.Recorrer("Pila.csv");
             }
             else
             {
-                LblCodigo.Text = "";
-                LblNombre.Text = "";
-                LblTramite.Text = "";
+                LblCo.Text = "";
+                LblNom.Text = "";
+                LblTram.Text = "";
+            }
+        }
+       
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Solo permite números (char.IsDigit) y la tecla de borrar (char.IsControl)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea cualquier otro caracter
             }
         }
 
         private void TxtCodigo_TextChanged(object sender, EventArgs e)
         {
+            ValidarDatos();
+        }
 
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void TxtTramite_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
         }
     }
 }
+ 
+

@@ -48,19 +48,60 @@ namespace WindowsFormsApp1
                 ColaEspera.Recorrer("Cola.csv");
                 ColaEspera.Recorrer(LstListado);
             }
-            else 
+            else
             {
-                LblCodigo.Text = "";
-                LblNombre.Text = "";
-                LblTramite.Text = "";
+                LblCodigoo.Text = "";
+                LblNombree.Text = "";
+                LblTramitee.Text = "";
 
             }
         }
 
         private void frmColas_Load(object sender, EventArgs e)
         {
+            BtnAgregar.Enabled = false;
+        }
 
+        private void ValidarDatos()
+        {
+            if (TxtCodigo.Text != "" && TxtNombre.Text != "" && TxtTramite.Text != "")
+            {
+                BtnAgregar.Enabled = true;
+            }
+            else
+            {
+                BtnAgregar.Enabled = false;
+            }
+
+        }
+
+        private void TxtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void TxtTramite_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Solo permite números (char.IsDigit) y la tecla de borrar (char.IsControl)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea cualquier otro caracter
+            }
         }
     }
 }
+
+    
+    
+
 

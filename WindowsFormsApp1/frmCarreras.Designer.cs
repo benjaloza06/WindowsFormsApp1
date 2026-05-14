@@ -39,25 +39,28 @@
             // 
             this.LblCarreras.AutoSize = true;
             this.LblCarreras.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCarreras.Location = new System.Drawing.Point(26, 27);
+            this.LblCarreras.Location = new System.Drawing.Point(35, 33);
+            this.LblCarreras.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblCarreras.Name = "LblCarreras";
-            this.LblCarreras.Size = new System.Drawing.Size(56, 15);
+            this.LblCarreras.Size = new System.Drawing.Size(75, 20);
             this.LblCarreras.TabIndex = 0;
             this.LblCarreras.Text = "Carreras:";
             // 
             // TxtCarreras
             // 
-            this.TxtCarreras.Location = new System.Drawing.Point(133, 22);
+            this.TxtCarreras.Location = new System.Drawing.Point(177, 27);
+            this.TxtCarreras.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCarreras.Name = "TxtCarreras";
-            this.TxtCarreras.Size = new System.Drawing.Size(100, 20);
+            this.TxtCarreras.Size = new System.Drawing.Size(132, 22);
             this.TxtCarreras.TabIndex = 1;
             // 
             // BtnGrabar
             // 
             this.BtnGrabar.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGrabar.Location = new System.Drawing.Point(133, 76);
+            this.BtnGrabar.Location = new System.Drawing.Point(177, 94);
+            this.BtnGrabar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnGrabar.Name = "BtnGrabar";
-            this.BtnGrabar.Size = new System.Drawing.Size(100, 24);
+            this.BtnGrabar.Size = new System.Drawing.Size(133, 30);
             this.BtnGrabar.TabIndex = 2;
             this.BtnGrabar.Text = "Grabar";
             this.BtnGrabar.UseVisualStyleBackColor = true;
@@ -67,35 +70,39 @@
             // 
             this.LstCarreras.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LstCarreras.FormattingEnabled = true;
-            this.LstCarreras.ItemHeight = 15;
-            this.LstCarreras.Location = new System.Drawing.Point(29, 106);
+            this.LstCarreras.ItemHeight = 19;
+            this.LstCarreras.Location = new System.Drawing.Point(39, 130);
+            this.LstCarreras.Margin = new System.Windows.Forms.Padding(4);
             this.LstCarreras.Name = "LstCarreras";
-            this.LstCarreras.Size = new System.Drawing.Size(204, 154);
+            this.LstCarreras.Size = new System.Drawing.Size(271, 175);
             this.LstCarreras.TabIndex = 3;
             // 
             // BtnLimpiar
             // 
             this.BtnLimpiar.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLimpiar.Location = new System.Drawing.Point(29, 76);
+            this.BtnLimpiar.Location = new System.Drawing.Point(39, 94);
+            this.BtnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLimpiar.Name = "BtnLimpiar";
-            this.BtnLimpiar.Size = new System.Drawing.Size(84, 23);
+            this.BtnLimpiar.Size = new System.Drawing.Size(112, 28);
             this.BtnLimpiar.TabIndex = 4;
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = true;
             // 
-            // frmCarreras
+            // FrmCarreras
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(254, 272);
+            this.ClientSize = new System.Drawing.Size(339, 335);
             this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.LstCarreras);
             this.Controls.Add(this.BtnGrabar);
             this.Controls.Add(this.TxtCarreras);
             this.Controls.Add(this.LblCarreras);
-            this.Name = "frmCarreras";
-            this.Text = "frmCarreras";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FrmCarreras";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Carreras";
             this.ResumeLayout(false);
             this.PerformLayout();
 
