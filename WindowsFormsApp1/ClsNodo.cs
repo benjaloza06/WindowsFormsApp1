@@ -45,10 +45,18 @@ namespace WindowsFormsApp1
             get { return Ant; } 
             set { Ant = value; }
         }
+
+        public ClsNodo Derecho
+        {
+            get { return Sig; }
+            set { Sig = value; }
+        }
+
+        public ClsNodo Izquierdo
+        {
+            get { return Ant; }
+            set { Ant = value; }
+        }
     }
-
-
-
-
 }
  
