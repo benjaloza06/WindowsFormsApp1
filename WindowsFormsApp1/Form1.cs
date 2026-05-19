@@ -129,6 +129,12 @@ namespace WindowsFormsApp1
             FrmCarreras ven = new FrmCarreras();
             ven.ShowDialog();
         }
+
+        private void arbolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbolBinario ven = new frmArbolBinario();
+            ven.ShowDialog();
+        }
     }
 }
 

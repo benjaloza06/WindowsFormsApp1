@@ -56,7 +56,7 @@
             // BtnEliminar
             // 
             this.BtnEliminar.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminar.Location = new System.Drawing.Point(787, 190);
+            this.BtnEliminar.Location = new System.Drawing.Point(15, 126);
             this.BtnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(231, 38);
@@ -163,13 +163,14 @@
             // GpbEliminado
             // 
             this.GpbEliminado.Controls.Add(this.CmbCodigo);
+            this.GpbEliminado.Controls.Add(this.BtnEliminar);
             this.GpbEliminado.Controls.Add(this.LblCodigoo);
             this.GpbEliminado.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GpbEliminado.Location = new System.Drawing.Point(771, 18);
             this.GpbEliminado.Margin = new System.Windows.Forms.Padding(4);
             this.GpbEliminado.Name = "GpbEliminado";
             this.GpbEliminado.Padding = new System.Windows.Forms.Padding(4);
-            this.GpbEliminado.Size = new System.Drawing.Size(259, 209);
+            this.GpbEliminado.Size = new System.Drawing.Size(259, 176);
             this.GpbEliminado.TabIndex = 35;
             this.GpbEliminado.TabStop = false;
             this.GpbEliminado.Text = "Elemento Eliminado";
@@ -263,7 +264,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1163, 530);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.TxtTramite);
             this.Controls.Add(this.TxtNombre);
