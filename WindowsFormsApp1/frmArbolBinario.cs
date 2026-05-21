@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             objPila.Agregar(x);
             objPila.Recorrer(DgvArbol);
             objPila.Recorrer(CmbCodigo);
-
+            objPila.Recorrer(TvwArbol);
 
             TxtCodigo.Text = "";
             TxtNombre.Text = "";
@@ -100,9 +100,9 @@ namespace WindowsFormsApp1
                 if (objPila.PrimerNodo != null)
                 {
                     Int32 x = Convert.ToInt32(CmbCodigo.Text);
-                    
-                    objPila.Recorrer(DgvArbol); 
-                   
+
+                    objPila.Recorrer(DgvArbol);
+
                     objPila.Recorrer(CmbCodigo);
 
                 }
@@ -114,9 +114,9 @@ namespace WindowsFormsApp1
                 BtnEliminar.Enabled = false;
             }
         }
-
     }
 }
+
         
     
 

@@ -38,6 +38,7 @@
             this.LblCodigo = new System.Windows.Forms.Label();
             this.GpbNuevo = new System.Windows.Forms.GroupBox();
             this.GpbEliminar = new System.Windows.Forms.GroupBox();
+            this.BtnEliminar = new System.Windows.Forms.Button();
             this.CmbCodigo = new System.Windows.Forms.ComboBox();
             this.LblCodigoo = new System.Windows.Forms.Label();
             this.GpbListadoGrilla = new System.Windows.Forms.GroupBox();
@@ -48,22 +49,19 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.TvwArbol = new System.Windows.Forms.TreeView();
             this.GpbNuevo.SuspendLayout();
             this.GpbEliminar.SuspendLayout();
             this.GpbListadoGrilla.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvArbol)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnEquilibrar
             // 
             this.BtnEquilibrar.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEquilibrar.Location = new System.Drawing.Point(612, 180);
-            this.BtnEquilibrar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnEquilibrar.Location = new System.Drawing.Point(459, 146);
             this.BtnEquilibrar.Name = "BtnEquilibrar";
-            this.BtnEquilibrar.Size = new System.Drawing.Size(231, 38);
+            this.BtnEquilibrar.Size = new System.Drawing.Size(173, 31);
             this.BtnEquilibrar.TabIndex = 45;
             this.BtnEquilibrar.Text = "Equilibrar";
             this.BtnEquilibrar.UseVisualStyleBackColor = true;
@@ -71,10 +69,9 @@
             // BtnAgregar
             // 
             this.BtnAgregar.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregar.Location = new System.Drawing.Point(10, 153);
-            this.BtnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnAgregar.Location = new System.Drawing.Point(8, 124);
             this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(216, 38);
+            this.BtnAgregar.Size = new System.Drawing.Size(162, 31);
             this.BtnAgregar.TabIndex = 44;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.UseVisualStyleBackColor = true;
@@ -82,28 +79,25 @@
             // 
             // TxtTramite
             // 
-            this.TxtTramite.Location = new System.Drawing.Point(93, 103);
-            this.TxtTramite.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtTramite.Location = new System.Drawing.Point(70, 84);
             this.TxtTramite.Name = "TxtTramite";
-            this.TxtTramite.Size = new System.Drawing.Size(132, 27);
+            this.TxtTramite.Size = new System.Drawing.Size(100, 23);
             this.TxtTramite.TabIndex = 43;
             this.TxtTramite.TextChanged += new System.EventHandler(this.TxtTramite_TextChanged);
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(94, 68);
-            this.TxtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtNombre.Location = new System.Drawing.Point(70, 55);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(132, 27);
+            this.TxtNombre.Size = new System.Drawing.Size(100, 23);
             this.TxtNombre.TabIndex = 42;
             this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
             // TxtCodigo
             // 
-            this.TxtCodigo.Location = new System.Drawing.Point(93, 31);
-            this.TxtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtCodigo.Location = new System.Drawing.Point(70, 25);
             this.TxtCodigo.Name = "TxtCodigo";
-            this.TxtCodigo.Size = new System.Drawing.Size(132, 27);
+            this.TxtCodigo.Size = new System.Drawing.Size(100, 23);
             this.TxtCodigo.TabIndex = 41;
             this.TxtCodigo.TextChanged += new System.EventHandler(this.TxtCodigo_TextChanged);
             // 
@@ -111,10 +105,9 @@
             // 
             this.LblTramite.AutoSize = true;
             this.LblTramite.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTramite.Location = new System.Drawing.Point(6, 110);
-            this.LblTramite.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblTramite.Location = new System.Drawing.Point(4, 89);
             this.LblTramite.Name = "LblTramite";
-            this.LblTramite.Size = new System.Drawing.Size(70, 20);
+            this.LblTramite.Size = new System.Drawing.Size(54, 15);
             this.LblTramite.TabIndex = 40;
             this.LblTramite.Text = "Tramite:";
             // 
@@ -122,10 +115,9 @@
             // 
             this.LblNombre.AutoSize = true;
             this.LblNombre.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombre.Location = new System.Drawing.Point(8, 70);
-            this.LblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblNombre.Location = new System.Drawing.Point(6, 57);
             this.LblNombre.Name = "LblNombre";
-            this.LblNombre.Size = new System.Drawing.Size(72, 20);
+            this.LblNombre.Size = new System.Drawing.Size(55, 15);
             this.LblNombre.TabIndex = 39;
             this.LblNombre.Text = "Nombre:";
             // 
@@ -133,10 +125,9 @@
             // 
             this.LblCodigo.AutoSize = true;
             this.LblCodigo.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCodigo.Location = new System.Drawing.Point(8, 33);
-            this.LblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblCodigo.Location = new System.Drawing.Point(6, 27);
             this.LblCodigo.Name = "LblCodigo";
-            this.LblCodigo.Size = new System.Drawing.Size(63, 20);
+            this.LblCodigo.Size = new System.Drawing.Size(48, 15);
             this.LblCodigo.TabIndex = 38;
             this.LblCodigo.Text = "Codigo:";
             // 
@@ -150,11 +141,9 @@
             this.GpbNuevo.Controls.Add(this.LblTramite);
             this.GpbNuevo.Controls.Add(this.LblNombre);
             this.GpbNuevo.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GpbNuevo.Location = new System.Drawing.Point(302, 27);
-            this.GpbNuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.GpbNuevo.Location = new System.Drawing.Point(226, 22);
             this.GpbNuevo.Name = "GpbNuevo";
-            this.GpbNuevo.Padding = new System.Windows.Forms.Padding(4);
-            this.GpbNuevo.Size = new System.Drawing.Size(243, 209);
+            this.GpbNuevo.Size = new System.Drawing.Size(182, 170);
             this.GpbNuevo.TabIndex = 46;
             this.GpbNuevo.TabStop = false;
             this.GpbNuevo.Text = "Nuevo Elemento";
@@ -165,23 +154,33 @@
             this.GpbEliminar.Controls.Add(this.CmbCodigo);
             this.GpbEliminar.Controls.Add(this.LblCodigoo);
             this.GpbEliminar.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GpbEliminar.Location = new System.Drawing.Point(589, 27);
-            this.GpbEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.GpbEliminar.Location = new System.Drawing.Point(442, 22);
             this.GpbEliminar.Name = "GpbEliminar";
-            this.GpbEliminar.Padding = new System.Windows.Forms.Padding(4);
-            this.GpbEliminar.Size = new System.Drawing.Size(259, 130);
+            this.GpbEliminar.Size = new System.Drawing.Size(194, 106);
             this.GpbEliminar.TabIndex = 47;
             this.GpbEliminar.TabStop = false;
             this.GpbEliminar.Text = "Elemento a Eliminar";
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminar.Location = new System.Drawing.Point(17, 58);
+            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(160, 31);
+            this.BtnEliminar.TabIndex = 28;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // CmbCodigo
             // 
             this.CmbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbCodigo.FormattingEnabled = true;
-            this.CmbCodigo.Location = new System.Drawing.Point(89, 29);
-            this.CmbCodigo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CmbCodigo.Location = new System.Drawing.Point(67, 24);
+            this.CmbCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.CmbCodigo.Name = "CmbCodigo";
-            this.CmbCodigo.Size = new System.Drawing.Size(137, 28);
+            this.CmbCodigo.Size = new System.Drawing.Size(104, 24);
             this.CmbCodigo.TabIndex = 27;
             this.CmbCodigo.SelectedIndexChanged += new System.EventHandler(this.CmbCodigo_SelectedIndexChanged);
             // 
@@ -189,10 +188,9 @@
             // 
             this.LblCodigoo.AutoSize = true;
             this.LblCodigoo.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCodigoo.Location = new System.Drawing.Point(19, 34);
-            this.LblCodigoo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblCodigoo.Location = new System.Drawing.Point(14, 28);
             this.LblCodigoo.Name = "LblCodigoo";
-            this.LblCodigoo.Size = new System.Drawing.Size(63, 20);
+            this.LblCodigoo.Size = new System.Drawing.Size(48, 15);
             this.LblCodigoo.TabIndex = 26;
             this.LblCodigoo.Text = "Codigo:";
             // 
@@ -203,11 +201,9 @@
             this.GpbListadoGrilla.Controls.Add(this.RdbInOr);
             this.GpbListadoGrilla.Controls.Add(this.DgvArbol);
             this.GpbListadoGrilla.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GpbListadoGrilla.Location = new System.Drawing.Point(13, 266);
-            this.GpbListadoGrilla.Margin = new System.Windows.Forms.Padding(4);
+            this.GpbListadoGrilla.Location = new System.Drawing.Point(10, 216);
             this.GpbListadoGrilla.Name = "GpbListadoGrilla";
-            this.GpbListadoGrilla.Padding = new System.Windows.Forms.Padding(4);
-            this.GpbListadoGrilla.Size = new System.Drawing.Size(884, 305);
+            this.GpbListadoGrilla.Size = new System.Drawing.Size(683, 248);
             this.GpbListadoGrilla.TabIndex = 48;
             this.GpbListadoGrilla.TabStop = false;
             this.GpbListadoGrilla.Text = "Listado del árbol";
@@ -215,9 +211,10 @@
             // RdbPostOr
             // 
             this.RdbPostOr.AutoSize = true;
-            this.RdbPostOr.Location = new System.Drawing.Point(31, 181);
+            this.RdbPostOr.Location = new System.Drawing.Point(23, 147);
+            this.RdbPostOr.Margin = new System.Windows.Forms.Padding(2);
             this.RdbPostOr.Name = "RdbPostOr";
-            this.RdbPostOr.Size = new System.Drawing.Size(119, 24);
+            this.RdbPostOr.Size = new System.Drawing.Size(93, 19);
             this.RdbPostOr.TabIndex = 15;
             this.RdbPostOr.TabStop = true;
             this.RdbPostOr.Text = "Post-Orden";
@@ -226,9 +223,10 @@
             // RdbPreOr
             // 
             this.RdbPreOr.AutoSize = true;
-            this.RdbPreOr.Location = new System.Drawing.Point(31, 104);
+            this.RdbPreOr.Location = new System.Drawing.Point(23, 84);
+            this.RdbPreOr.Margin = new System.Windows.Forms.Padding(2);
             this.RdbPreOr.Name = "RdbPreOr";
-            this.RdbPreOr.Size = new System.Drawing.Size(112, 24);
+            this.RdbPreOr.Size = new System.Drawing.Size(88, 19);
             this.RdbPreOr.TabIndex = 14;
             this.RdbPreOr.TabStop = true;
             this.RdbPreOr.Text = "Pre-Orden";
@@ -237,9 +235,10 @@
             // RdbInOr
             // 
             this.RdbInOr.AutoSize = true;
-            this.RdbInOr.Location = new System.Drawing.Point(31, 32);
+            this.RdbInOr.Location = new System.Drawing.Point(23, 26);
+            this.RdbInOr.Margin = new System.Windows.Forms.Padding(2);
             this.RdbInOr.Name = "RdbInOr";
-            this.RdbInOr.Size = new System.Drawing.Size(101, 24);
+            this.RdbInOr.Size = new System.Drawing.Size(80, 19);
             this.RdbInOr.TabIndex = 13;
             this.RdbInOr.TabStop = true;
             this.RdbInOr.Text = "In-Orden";
@@ -252,12 +251,11 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.DgvArbol.Location = new System.Drawing.Point(289, 32);
-            this.DgvArbol.Margin = new System.Windows.Forms.Padding(4);
+            this.DgvArbol.Location = new System.Drawing.Point(217, 26);
             this.DgvArbol.Name = "DgvArbol";
             this.DgvArbol.RowHeadersVisible = false;
             this.DgvArbol.RowHeadersWidth = 51;
-            this.DgvArbol.Size = new System.Drawing.Size(524, 245);
+            this.DgvArbol.Size = new System.Drawing.Size(460, 199);
             this.DgvArbol.TabIndex = 12;
             // 
             // Column1
@@ -281,38 +279,24 @@
             this.Column3.Name = "Column3";
             this.Column3.Width = 125;
             // 
-            // pictureBox1
+            // TvwArbol
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.images2;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 27);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 49;
-            this.pictureBox1.TabStop = false;
-            // 
-            // BtnEliminar
-            // 
-            this.BtnEliminar.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminar.Location = new System.Drawing.Point(23, 71);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(214, 38);
-            this.BtnEliminar.TabIndex = 28;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.UseVisualStyleBackColor = true;
-            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            this.TvwArbol.Location = new System.Drawing.Point(33, 29);
+            this.TvwArbol.Name = "TvwArbol";
+            this.TvwArbol.Size = new System.Drawing.Size(172, 163);
+            this.TvwArbol.TabIndex = 49;
             // 
             // frmArbolBinario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 595);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(715, 483);
+            this.Controls.Add(this.TvwArbol);
             this.Controls.Add(this.BtnEquilibrar);
             this.Controls.Add(this.GpbNuevo);
             this.Controls.Add(this.GpbEliminar);
             this.Controls.Add(this.GpbListadoGrilla);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmArbolBinario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmArbolBinario";
@@ -324,14 +308,11 @@
             this.GpbListadoGrilla.ResumeLayout(false);
             this.GpbListadoGrilla.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvArbol)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnEquilibrar;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.TextBox TxtTramite;
@@ -353,5 +334,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Button BtnEliminar;
+        private System.Windows.Forms.TreeView TvwArbol;
     }
 }
