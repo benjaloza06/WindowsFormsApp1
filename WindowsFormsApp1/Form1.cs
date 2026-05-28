@@ -135,6 +135,12 @@ namespace WindowsFormsApp1
             frmArbolBinario ven = new frmArbolBinario();
             ven.ShowDialog();
         }
+
+        private void grafoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbolBinario ven = new frmArbolBinario();
+            ven.ShowDialog();
+        }
     }
 }
 
