@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="ClsArbolBinario.cs" />
     <Compile Include="ClsArchivo.cs" />
+    <Compile Include="ClsBaseDatos.cs" />
     <Compile Include="ClsCola.cs" />
     <Compile Include="ClsGrafoMatricial.cs" />
     <Compile Include="ClsListaDoble.cs" />
@@ -95,6 +96,12 @@
     </Compile>
     <Compile Include="frmColores.Designer.cs">
       <DependentUpon>frmColores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaTablaBd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaTablaBd.Designer.cs">
+      <DependentUpon>frmConsultaTablaBd.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDatosDesarrollador.cs">
       <SubType>Form</SubType>
@@ -154,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmColores.resx">
       <DependentUpon>frmColores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaTablaBd.resx">
+      <DependentUpon>frmConsultaTablaBd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosDesarrollador.resx">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
