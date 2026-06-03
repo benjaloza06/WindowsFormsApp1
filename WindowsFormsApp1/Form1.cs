@@ -138,7 +138,19 @@ namespace WindowsFormsApp1
 
         private void grafoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmArbolBinario ven = new frmArbolBinario();
+            frmGrafo ven = new frmGrafo();
+            ven.ShowDialog();
+        }
+
+        private void consultaDeUnaTablaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaTablaBd ven = new frmConsultaTablaBd();
+            ven.ShowDialog();
+        }
+
+        private void consultaDeBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaSqlBd ven = new frmConsultaSqlBd();
             ven.ShowDialog();
         }
     }

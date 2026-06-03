@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class frmConsultaTablaBd : Form
+    public partial class frmConsultaSqlBd : Form
     {
-        public frmConsultaTablaBd()
+        public frmConsultaSqlBd()
         {
             InitializeComponent();
         }
-
-        private void BtnListar_Click(object sender, EventArgs e)
-        {
-            ClsBaseDatos BD = new ClsBaseDatos();
-            BD.Listar(CmbTabla.Text, DgvDatos);
-        }
     }
 }
-
