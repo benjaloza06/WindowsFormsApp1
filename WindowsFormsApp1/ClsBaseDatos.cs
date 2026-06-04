@@ -18,9 +18,9 @@ namespace WindowsFormsApp1
         private string CadenaConexion1 = "Provider=Microsoft.JET.OLEDB.4.0;Data source=Libreria.mdb";
         private string CadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data source=Libreria.mdb";
         //private string varSQL = "Select * from Libro"
-    
 
-    public void Listar(DataGridView Grilla)
+
+        public void Listar(DataGridView Grilla)
         {
             try
             {
@@ -99,6 +99,7 @@ namespace WindowsFormsApp1
                 conexion.Close();
             }
         }
-
-    } 
+    }
 }
+
+

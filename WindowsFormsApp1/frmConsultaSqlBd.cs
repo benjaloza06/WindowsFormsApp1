@@ -16,5 +16,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void BtnListar_Click(object sender, EventArgs e)
+        {
+            ClsBaseDatos objDatos = new ClsBaseDatos();
+            objDatos.Listar(DgvConsulta, TxtConsulta.Text);
+        }
     }
 }

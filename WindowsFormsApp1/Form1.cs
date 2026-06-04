@@ -153,6 +153,12 @@ namespace WindowsFormsApp1
             frmConsultaSqlBd ven = new frmConsultaSqlBd();
             ven.ShowDialog();
         }
+
+        private void operacionesEnBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOperacionesBd ven = new frmOperacionesBd();
+            ven.ShowDialog();
+        }
     }
 }
 
