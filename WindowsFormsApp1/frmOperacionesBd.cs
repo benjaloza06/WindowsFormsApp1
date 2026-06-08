@@ -55,7 +55,42 @@ namespace WindowsFormsApp1
 
         private void BtnDif_Click(object sender, EventArgs e)
         {
-            
+            String varSQL = "Select * from libro " +
+                " where idIdioma = 2 and " +
+                "idLibro not in " +
+                "EXCEPT " +
+                " (Select idLibro from libro where IdPais = 3 )" +
+                " order by 1 asc ";
+            objDatos.Listar(DgvOperaciones, varSQL);
+
+        }
+
+        private void BtnInterseccion_Click(object sender, EventArgs e)
+        {
+            String varSQL = "Select * from libro " +
+                " where idIdioma = 2 and " +
+                "idLibro not in " +
+                "EXCEPT " +
+                " (Select idLibro from libro where IdPais = 3 )" +
+                " order by 1 asc ";
+            objDatos.Listar(DgvOperaciones, varSQL);    
+        }
+
+        private void BtnUnion_Click(object sender, EventArgs e)
+        {
+            String varSQL = "SELECT + " +
+                "FROM LIBRO " +
+                "WHERE IDIDIOMA = 1 " +
+                "UNION " +
+                "SELECT * " +
+                "FROM LIBRO " +
+                "WHERE IDIDIOMA = 2 ";
+            objDatos.Listar(DgvOperaciones, varSQL);
         }
     }
 }
+        
+    
+
+
+     
