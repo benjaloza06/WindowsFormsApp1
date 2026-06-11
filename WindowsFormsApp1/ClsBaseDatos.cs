@@ -15,8 +15,8 @@ namespace WindowsFormsApp1
         private OleDbCommand comando = new OleDbCommand();
         private OleDbDataAdapter adaptador = new OleDbDataAdapter();
 
-        private string CadenaConexion1 = "Provider=Microsoft.JET.OLEDB.4.0;Data source=Libreria.mdb";
-        private string CadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data source=Libreria.mdb";
+        private string CadenaConexion1 = "Provider=Microsoft.jet.OLEDB.4.0;Data Source=..\\..\\Libreria(MDB)\\Libreria.mdb";
+        private string CadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data source=..\\..\\Libreria(MDB)\\Libreria.mdb";
         //private string varSQL = "Select * from Libro"
 
 
